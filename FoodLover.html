@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width , initial-scale= 1">
+<title>Come On!Foodies</title>
+<style type="text/css">
+*{
+  box-sizing: border-box;
+}
+.column 
+{
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+.images
+{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.style
+{
+  height:250px;
+  width:25%;
+  border-radius: 20px;
+
+}
+.style1
+{
+  height:250px;
+  width:100%;
+  border-radius: 20px;
+
+}
+.font1
+{
+  font-weight: bold;
+  font-style: italic;
+  font-size: xx-large;
+  color: black;
+
+}
+.footerstyle
+{
+  width: 100%;
+  margin-top: 30px;
+  background-image: linear-gradient(to bottom left,gray,#cccccc);
+
+}
+.tablestyle
+{
+  width: 100%;
+  padding: 30px;
+}
+.tdhead
+{
+  text-align: left;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-style: italic;
+  color: black;
+}
+.td
+{
+  color: ghostwhite;
+}
+.td:hover
+{
+  color: rebeccapurple;
+}
+header
+{
+  position: sticky;
+  top: 0px;
+  border-radius: 20px;
+}
+table.ts
+{
+  width: 100%;
+  background-image: linear-gradient(to bottom left,red,darkred);
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+  
+
+</style>
+
+
+<body style="margin:0px">
+  <header>
+    <table class="ts">
+      <tr>
+        <td style="width:70%;">
+          <h1 style="font-weight:bolder;font-size: 50px;font-style: italic;color: ghostwhite;
+          margin-left: 50%;">YOMATO</h1>
+        </td>
+        <td style="width:15%;text-align:right">
+          <button style="color:ghostwhite;background-color:blue;">Login</button>
+        </td>
+        <td style="width:15%;text-align: center;">
+          <button style="color:ghostwhite;background-color:green;">Signup</button>
+        </td>
+      </tr>
+    </table>
+  </header>
+  <div style="width:100%">
+    <table width="100%">
+      <tr>
+        <td style="text-align:center;">
+          <marquee direction="right" style="z-index: -1;position: sticky;">
+          <a href="#delivery"><img src="kisspng-vector-graphics-delivery-illustration-clip-art-mot-tiffin-by-sunil-tiffin-indian-food-at-greystones-5ba3c13c795e07.1895292715374584924971.png" style="height:100px;width:220px"></a>
+        </marquee>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <hr>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <label style="font-weight: bold;font-size: 20px;">Filter:-</label>
+    <select name="Filter" id="Filter">
+      <option value="select">select</option>
+      <option value="Popularity">Popularity</option>
+      <option value="RatingHightoLow">Rating: High to Low</option>
+      <option value="DeliveryTime">Delivery Time</option>
+      <option value="CostLowtoHigh">Cost: Low to High</option>
+      <option value="CostHightoLow">Cost: High to Low</option>
+  </select>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <label style="font-weight: bold;font-size: 20px;">Non-Veg:-</label>
+      <select name="Nonveg" id="nonveg">
+      <option value="select">select</option>
+      <option value="thali">Non-veg Thali</option>
+      <option value="rolls">Non-veg Rolls</option>
+      <option value="noodle">Non-veg Noddles</option>
+      <option value="combo">combo</option>
+    </select>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <label style="font-weight: bold;font-size: 20px;">Pure Veg:-</label>
+      <select name="veg" id="veg">
+      <option value="select">select</option>
+      <option value="thali">veg Thali</option>
+      <option value="max">veg Rolls</option>
+      <option value="upto">veg Noddles</option>
+      <option value="upto">combo</option>
+    </select>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <label style="font-weight: bold;font-size: 20px;">Great offers:-</label>
+      <select name="offers" id="offers">
+      <option value="select">select</option>
+      <option value="min">min:50% off</option>
+      <option value="max">max: 50% 0ff </option>
+      <option value="upto">upto 100% Cashback</option>
+      <option value="upto">upto 200 cashback</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br>
+
+<div class="images">
+<h1>Inspiration for your first order</h1>
+<marquee behavior="slide" style="z-index: -1;position: sticky;">
+<a href="https://www.zomato.com/ncr/restaurants?place_name=Ywca%2C+1%2C+Ashoka+Rd%2C+Hanuman+Road+Area%2C+Connaught+Place%2C+New+Delhi%2C+Delhi&dishv2_id=7cf2db5ec261a0fa27a502d3196a6f60_2&category=1"><img class="style" src="wallpaperflare.com_wallpaper.jpg"></a>
+<a href="https://www.zomato.com/ncr/restaurants?place_name=Ywca%2C+1%2C+Ashoka+Rd%2C+Hanuman+Road+Area%2C+Connaught+Place%2C+New+Delhi%2C+Delhi&dishv2_id=6e69685d22c94ffd42ccd7e70e246bd9_2&category=1"><img class="style" src="wallpaperflare.com_wallpaper (1).jpg"></a>
+<a href="https://www.zomato.com/ncr/restaurants?place_name=Ywca%2C+1%2C+Ashoka+Rd%2C+Hanuman+Road+Area%2C+Connaught+Place%2C+New+Delhi%2C+Delhi&dishv2_id=a1b8585122e1ad60623d6a74d3eb3b6a_2&category=1"><img class="style" src="wallpaperflare.com_wallpaper (2).jpg"></a>
+<a href="https://www.zomato.com/ncr/restaurants?place_name=Ywca%2C+1%2C+Ashoka+Rd%2C+Hanuman+Road+Area%2C+Connaught+Place%2C+New+Delhi%2C+Delhi&dishv2_id=eb2ef145c0fcad44dbb4ed26aad1527d_2&category=1"><img class="style" src="wallpaperflare.com_wallpaper (3).jpg"></a>
+</marquee>
+</div>
+<br>
+<br>
+<br>
+<section>
+  <h1>Delivery Restaurants in Delhi NCR</h1>
+  <div class="row">
+  <div class="column">
+    <a class="font1" href="https://www.zomato.com/ncr/lord-of-the-rolls-rajinder-nagar-new-delhi/order">
+      <img class="style1" src="wallpaperflare.com_wallpaper (4).jpg">
+      <br>
+       &nbsp;&nbsp;Lord Of The Rolls
+      <p style="font-weight:normal;font-size:small;padding-left: 10px;"> Rolls, Fast Food, Lebanese,Beverages<br>₹150 for one  *42 min<p></a>
+        <button id="itemadd1" name="ADD" onclick="add(this.id)" style="width:10%;background-color:lightgray;
+    color: black;visibility: hidden;">+</button>
+      <button id="add1" name="ADD" onclick="onClick(this.id)" style="width:25%;background-color:green;
+      color: ghostwhite;">ADD</button>
+      <button id="itemreduce1" onclick="reduce(this.id)" name="reduce" style="width:10%;background-color:lightgray;
+   color: black;visibility: hidden;">-</button> 
+  </div>
+  <div class="column">
+    <a class="font1" href="https://www.zomato.com/ncr/shudh-annapurna-karol-bagh-new-delhi/order">
+      <img class="style1" src="wallpaperflare.com_wallpaper (5).jpg"><br>
+       &nbsp;&nbsp;Shudh Annapurna
+      <p style="font-weight:normal;font-size:small;padding-left: 10px;">North Indian, Fast Food, South Indian
+        <br>₹100 for one  *40 min
+      <p>
+    </a>
+    <button id="itemadd2" name="ADD" onclick="add(this.id)" style="width:10%;background-color:lightgray;
+    color: black;visibility: hidden;">+</button>
+    <button id="add2" name="ADD" onclick="onClick(this.id)" style="width:25%;background-color:green;
+    color: ghostwhite;">ADD</button>
+    <button id="itemreduce2" onclick="reduce(this.id)" name="reduce" style="width:10%;background-color:lightgray;
+   color: black;visibility: hidden;">-</button> 
+  </div>
+  
+  <div class="column">
+    <a class="font1" href="https://www.zomato.com/ncr/punjab-sweet-corner-karol-bagh-new-delhi/order">
+      <img class="style1" src="wallpaperflare.com_wallpaper (6).jpg"><br>
+       &nbsp;&nbsp;Punjab Sweet Corner
+      <p style="font-weight:normal;font-size:small;padding-left: 10px;">North Indian, Fast Food, South Indian
+        <br>₹100 for one  *38 min
+      <p>
+    </a>
+    <button id="itemadd3" name="ADD" onclick="add(this.id)" style="width:10%;background-color:lightgray;
+    color: black;visibility: hidden;">+</button>
+    <button id="add3" name="ADD" onclick="onClick(this.id)" style="width:25%;background-color:green;color: ghostwhite;">ADD</button>
+    <button id="itemreduce3" onclick="reduce(this.id)" name="reduce" style="width:10%;background-color:lightgray;
+   color: black;visibility: hidden;">-</button> 
+  </div>
+  
+  <div class="column">
+    <a class="font1" href="https://www.zomato.com/ncr/dominos-pizza-connaught-place-new-delhi/order">
+      <img class="style1" src="wallpaperflare.com_wallpaper (8).jpg"><br>
+       &nbsp;&nbsp;Domino's Pizza
+      <p style="font-weight:normal;font-size:small;padding-left: 10px;">Pizza, Fast Food, Desserts, Beverages<br>₹150 for one *30 min
+      <p>
+    </a>
+    <button id="itemadd4" name="ADD" onclick="add(this.id)" style="width:10%;background-color:lightgray;
+    color: black;visibility: hidden;">+</button>
+     <button id="add4" name="ADD" onclick="onClick(this.id)" style="width:25%;background-color:green;color: ghostwhite;">ADD</button>
+     <button id="itemreduce4" onclick="reduce(this.id)" name="reduce" style="width:10%;background-color:lightgray;
+   color: black;visibility: hidden;">-</button>   
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="column">
+    <a class="font1" href="https://www.zomato.com/ncr/burger-king-connaught-place-new-delhi/order">
+      <img class="style1" src="wallpaperflare.com_wallpaper (7).jpg"><br>
+       &nbsp;&nbsp;Burger King
+      <p style="font-weight:normal;font-size:small;padding-left: 10px;"> Burger, American, Desserts, Beverages, Fast Food<br>₹150 for one *29 min<p></a>
+        <button id="itemadd5" name="ADD" onclick="add(this.id)" style="width:10%;background-color:lightgray;
+    color: black;visibility: hidden;">+</button>
+    <button id="add5" name="ADD" onclick="onClick(this.id)" style="width:25%;background-color:green;color: ghostwhite;">ADD</button>
+    <button id="itemreduce5" onclick="reduce(this.id)" name="reduce" style="width:10%;background-color:lightgray;
+   color: black;visibility: hidden;">-</button>   
+  </div>
+  <div class="column">
+    <a class="font1" href="https://www.zomato.com/ncr/behrouz-biryani-connaught-place-new-delhi/order">
+      <img class="style1" src="wallpaperflare.com_wallpaper (9).jpg"><br>
+       &nbsp;&nbsp;Behrouz Biryani
+      <p style="font-weight:normal;font-size:small;padding-left: 10px;">Biryani, Kebab, Mughlai, Hyderabadi
+        <br>₹350 for one *39 min
+      <p>
+    </a>
+    <button id="itemadd6" name="ADD" onclick="add(this.id)" style="width:10%;background-color:lightgray;
+    color: black;visibility: hidden;">+</button>
+    <button id="add6" name="ADD" onclick="onClick(this.id)" style="width:25%;background-color:green;color: ghostwhite;">ADD</button>
+    <button id="itemreduce6" onclick="reduce(this.id)" name="reduce" style="width:10%;background-color:lightgray;
+   color: black;visibility: hidden;">-</button> 
+  </div>
+  
+  <div class="column">
+    <a class="font1" href="https://www.zomato.com/ncr/sagar-ratna-connaught-place-new-delhi/order">
+      <img class="style1" src="wallpaperflare.com_wallpaper (10).jpg"><br>
+       &nbsp;&nbsp;Sagar Ratna
+      <p style="font-weight:normal;font-size:small;padding-left: 10px;">South Indian, North Indian, Chinese
+        <br>₹200 for one  *32 min<p>
+    </a>
+    <button id="itemadd7" name="ADD" onclick="add(this.id)" style="width:10%;background-color:lightgray;
+    color: black;visibility: hidden;">+</button>
+    <button id="add7" name="ADD" onclick="onClick(this.id)" style="width:25%;background-color:green;color: ghostwhite;">ADD</button>
+    <button id="itemreduce7" onclick="reduce(this.id)" name="reduce" style="width:10%;background-color:lightgray;
+   color: black;visibility: hidden;">-</button>
+  </div>
+  
+  <div class="column">
+    <a class="font1" href="https://www.zomato.com/ncr/chai-point-3-connaught-place-new-delhi/order">
+      <img class="style1" src="wallpaperflare.com_wallpaper (11).jpg"><br>
+       &nbsp;&nbsp;Chai Point
+      <p style="font-weight:normal;font-size:small;padding-left: 10px;">Tea, Fast Food, Beverages
+        <br>₹150 for one *27 min<p>
+    </a>
+    <button id="itemadd8" name="ADD" onclick="add(this.id)" style="width:10%;background-color:lightgray;
+    color: black;visibility: hidden;">+</button>
+   <button id="add8" onclick="onClick(this.id)" name="ADD1" style="width:25%;background-color:green;color: ghostwhite;visibility: visible;">ADD</button>
+   <button id="itemreduce8" onclick="reduce(this.id)" name="reduce" style="width:10%;background-color:lightgray;
+   color: black;visibility: hidden;">-</button>
+  </div>
+</div>
+</section>
+<br>
+<br>
+<section style="width:100%;margin-top:30px">
+  <h1>Give Your Feedback</h1>
+  <form style="width:100%">
+    <table style="width:100%;border-style: solid;">
+      <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="width:50%">
+        <input type="text" name="name" placeholder="Your Name" style="width:100%">
+      </td>
+      <td style="width:50%">
+        <input type="email" name="email" placeholder="abs@gmail.com" style="width:100%">
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="text" name="subject" placeholder="Subject" style="width:100%">
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <textarea id="sammegh" name="sammegh" rows="4" cols="50" placeholder="message" style="width:100%">
+        </textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align:center">
+        <input type="submit" name="Submit" style="background-color:blue;color: ghostwhite;">
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    </table>
+  </form>
+</section>
+<footer class="footerstyle">
+  <table class="tablestyle">
+    <tr>
+      <td class="tdhead">
+        YOMATO
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h3>COMPANY</h3>
+        <a class="td" href="https://www.zomato.com/who-we-are">Who We Are</a><br><br>
+        <a class="td" href="https://www.zomato.com/blog/">Blog</a><br><br>
+        <a class="td" href="https://www.zomato.com/careers">Careers</a><br><br>
+        <a class="td" href="https://www.zomato.com/report-fraud">Report Fraud</a><br><br>
+        <a class="td" href="https://www.zomato.com/contact">Contact</a><br><br>
+        <a class="td" href="https://www.zomato.com/financial-information">Financial Information</a>
+      </td>
+      <td>
+        <h3>FOR FOODIES</h3>
+        <a class="td" href="#">FOR FOODIES</a><br><br>
+        <a class="td" href="#">Code of Conducts</a><br><br>
+        <a class="td" href="#">Community</a><br><br>
+        <a class="td" href="#">Mobile Apps</a><br><br><br><br>
+        <br>
+      </td>
+      <td>
+        <h3>FOR RESTAURANTS</h3>
+        <a class="td" href="#">Add restaurant</a><br><br>
+        <a class="td" href="#">Business App</a><br><br>
+        <a class="td" href="#">Restaurant Widgets</a><br><br>
+        <a class="td" href="#">Products for Businesses</a><br><br><br><br><br>
+      </td>
+      <td >
+        <h3>FOR YOU</h3>
+        <a class="td" href="#">Privacy</a><br><br>
+        <a class="td" href="#">Terms</a><br><br>
+        <a class="td" href="#">Security</a><br><br>
+        <a class="td" href="#">Sitemap</a><br><br><br><br><br>
+
+      </td>
+      <td style="text-align:center">
+        <h3>SOCIAL LINKS</h3><br>
+        <a href="https://www.facebook.com/zomato" target="_self">
+            <img src="Facebook-icon-1.png" style="height:40px"></a>
+            &nbsp;&nbsp;
+          <a href="#" target="_self">
+            <img src="kisspng-united-states-youtube-logo-youtube-play-button-transparent-png-5ab1be08946c16.888989591521597960608.png" style="height:40px"></a>&nbsp;&nbsp;
+           <a href="https://www.instagram.com/zomato/" target="_self">
+            <img src="580b57fcd9996e24bc43c521.png" style="height:40px">
+          </a>&nbsp;&nbsp;
+          <a href="#" target="_self">
+            <img src="Daco_4047678.png" style="height:40px">
+          </a>
+       </td>
+    </tr>
+  </table>
+  <table style="width:100%">
+    <tr>
+      <td  colspan="5" style="color:ghostwhite;text-align: center;font-weight: bold;background-color: darkred;">
+          <h3 class="c">Copyright © 2021 | Design by SOURAJIT PRATIHARY</h3>
+        </td>
+    </tr>
+  </table>
+
+</footer>
+</body>
+<script type="text/javascript">
+  var a =["add1","add2","add3","add4","add5","add6","add7","add8"];
+  var b =["itemadd1","itemadd2","itemadd3","itemadd4","itemadd5","itemadd6","itemadd7","itemadd8"];
+  var c =["itemreduce1","itemreduce2","itemreduce3","itemreduce4","itemreduce5","itemreduce6","itemreduce7","itemreduce8"];
+  var d=[0,0,0,0,0,0,0,0];
+
+  var prdname =["Lord Of TheRolls","Shudh Annapurna","Panjab Sweet Corner","Dominos's pizza","Burger King","Behrouz Biriyani","Sagar Ratna","Chai point"];
+  var price=["80","120","200","250","89","120","160","70"];
+   var numbers = new Array();
+
+  function onClick(id)
+  {
+    for(var i=0;i<10;i++)
+    {
+      if(a[i]==id)
+      {
+        if(d[i]<0)
+        {
+        d[i]=0;
+        }
+        document.getElementById(b[i]).style.visibility = "visible";
+        document.getElementById(c[i]).style.visibility = "visible";
+       const d1 = document.getElementById(id);
+       d1.style.backgroundColor = 'lightgray';
+       d1.style.color = 'black';
+      }
+    }
+   
+    /*window.alert('One Item  Added');*/
+  }
+  function add(id)
+  {
+    for(var i=0;i<10;i++)
+    {
+      if(b[i]==id)
+      {
+       const w = document.getElementById(a[i]);
+        d[i]++;
+        w.innerText = d[i];
+        window.alert('One Item  Added to your card');
+        numbers.push({prdname: prdname[i], price: price[i]});
+        console.log(numbers);
+        break;
+      }
+    }
+
+  }
+  function reduce(id)
+  {
+    
+    for(var i=0;i<10;i++)
+    {
+      if(c[i]==id)
+      {
+        const w = document.getElementById(a[i]);
+        const y = document.getElementById(b[i]);
+        const z = document.getElementById(c[i]);
+         d[i]--;
+        if(d[i]<=0)
+        {
+
+          w.innerText = "ADD";
+          w.style.backgroundColor = 'green';
+          w.style.color = 'ghostwhite';
+          y.style.visibility = "hidden";
+          z.style.visibility = "hidden";
+          if(d[i]==0)
+          {
+          window.alert('All items  removed from your card');
+          break;
+          }
+        }
+        else
+        {
+        w.innerText = d[i];
+        window.alert('One Item  removed from your card');
+        break;
+        }
+      }
+    }
+  }
+</script>
+</html>
